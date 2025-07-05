@@ -1,12 +1,40 @@
-# React + Vite
+# 🚀 AI Website Generator ( WebCrafter - GenAI )
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered web application that generates complete website code (HTML, CSS, and JavaScript) from simple user prompts. Built with **React.js** and integrates the **Gemini API** by Google for intelligent code generation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🧠 **AI-Powered Code Generation**  
+  Generate a fully functional website from a natural language prompt using Gemini AI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 💻 **Live Website Preview**  
+  Instantly renders the generated website so users can visualize the result.
+
+- 🧾 **Code Tabs**  
+  View and copy HTML, CSS, or JavaScript code in separate tabs.
+
+- 🧑‍🎨 **Modern UI**  
+  Clean and responsive layout with a chat-style input interface.
+
+- 🚫 **No External CSS Frameworks**  
+  Built entirely using plain CSS for full customization and control.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, HTML, CSS, JavaScript
+- **AI Model**: Gemini API (Google Generative AI)
+- **Styling**: Custom CSS (no Tailwind or Bootstrap)
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ai-website-generator.git
+cd ai-website-generator
