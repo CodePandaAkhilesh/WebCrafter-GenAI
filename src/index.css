@@ -1,0 +1,383 @@
+/* Reset margins/padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #202123;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left Sidebar */
+.left {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 20%;
+  margin: 5px;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+/* Right Content Panel */
+.right {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  margin: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(28, 28, 28);
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Scrollable Main Container */
+.main-container {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgb(31, 31, 31);
+  border-radius: 5px;
+  margin: 5px 2px 2px 3px;
+  height: 12%;
+  padding: 20px 10px 15px 10px;
+}
+
+.top div span {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+.top p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.4;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  height: 85%;
+}
+
+.middle-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 10px;
+}
+
+.chat, .search, .library {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.chat:hover, .search:hover, .library:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 10px 0px 15px;
+  border-radius: 8px;
+  color: white;
+  margin: 5px 2px 5px 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(31, 31, 31);
+  height: 9%;
+  cursor: pointer;
+}
+
+.plan {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.plan .upgrade {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.plan .more, .fuel {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.bottom:hover {
+  background-color: #1e1e1e;
+}
+
+.arrow {
+  height: 25px;
+  width: 20px;
+  color: white;
+}
+
+.profile {
+  border: 1px solid black;
+  margin: 10px 30px 10px 30px;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  background-color: rgb(12, 12, 12);
+  border-radius: 20px;
+}
+
+.ai {
+  font-size: 15px;
+  color: #aaa;
+  padding-right: 10px;
+}
+
+.copy {
+  cursor: pointer;
+}
+
+/* Form Input Bar */
+.type-message {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 25px auto;         /* Center horizontally */
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  min-height: 100px;
+  height: 80px;
+  flex-shrink: 0;
+  width: 90%;               /* ✅ Increase width */
+  max-width: 1000px;        /* ✅ Optional: max width for large screens */
+}
+
+.ask {
+  flex: 1;                  /* ✅ Auto-fill space */
+  height: 60px;
+  background-color: rgb(12, 12, 12);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.ask2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+
+.button {
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #323544;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #4a4d5e;
+}
+
+.arrow {
+  height: 25px;
+  width: 20px;
+  color: white;
+}
+
+/* Output Section */
+.output-section {
+  display: flex;
+  gap: 20px;
+  margin: 25px;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100% - 160px); /* Adjust height dynamically if needed */
+}
+
+/* Code Display Area */
+.code-display {
+  width: 50%;
+  background: black;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  padding: 5px 12px;
+  border: none;
+  background: rgb(159, 142, 159);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tabs button:hover {
+  background: #ccc;
+}
+
+.code-display pre {
+  background: #101010;
+  padding: 12px;
+  border-radius: 4px;
+  flex: 1;
+  overflow: auto;
+  white-space: pre;
+  max-height: 100%;
+}
+
+/* Preview Area */
+.preview-pane {
+  width: 50%;
+  height: 100%;
+  max-height: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #000000;
+  overflow: auto;
+}
+
+/* General */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.centered-input {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bottom-input {
+  padding: 20px;
+}
+.chat-footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: -12px;
+  color: #aaa;
+  background-color: #1c1c1c;
+  border-top: 1px solid #2a2a2a;
+}
+
+.chat-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.chat-footer a:hover {
+  text-decoration: underline;
+}
+/* Spin animation for the arrow */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.arrow {
+  height: 25px;
+  width: 20px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Apply spin when loading is true */
+.arrow.loading {
+  animation: spin 1s infinite linear;
+}
+
+
