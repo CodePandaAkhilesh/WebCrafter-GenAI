@@ -19,7 +19,10 @@ export default function InputForm({ onGenerate }) {
     const prompt = `You are a code generator.
 
 Given a short command like:
-"Create calculator", "Create blog", or "Create coding platform",
+"Create calculator", "Create blog", or "Create coding platform, Create tic tac toe game
+,Create portfolio, create contact page/form , Create e-commerce site with cart,
+Create a login/signup page, Create a resume website  , Create countdown timer,
+Create to-do list",
 
 Always generate a complete working website using:
 - HTML for layout
