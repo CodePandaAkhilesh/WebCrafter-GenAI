@@ -36,5 +36,5 @@ An AI-powered web application that generates complete website code (HTML, CSS, a
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/ai-website-generator.git
-cd ai-website-generator
+git clone https://github.com/CodePandaAkhilesh/WebCrafter-GenAI
+cd WebCrafter-GenAI
