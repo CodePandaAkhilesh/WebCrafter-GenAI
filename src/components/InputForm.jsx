@@ -71,7 +71,7 @@ Command: "${input}"`;
       <input
         type="text"
         className="ask"
-        placeholder="Describe the website or type a command like: Create calculator"
+        placeholder="What kind of website are you dreaming of today?"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && !loading && generateWebsite()}
