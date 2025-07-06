@@ -34,8 +34,7 @@ const MainContainer = ({ setCode }) => {
 
       {/* footer */}
       <footer className="chat-footer">
-        © 2025 <strong>WebCrafter</strong> | Made by <a href="https://github.com/CodePandaAkhilesh/AI-Agent"
-         target="_blank" rel="noopener noreferrer">Akhilesh Verma ( Mentor - Rohit Negi )</a>
+        © 2025 <strong>WebCrafter</strong> | Made by Akhilesh Verma
       </footer>
     </div>
   );
