@@ -1,4 +1,6 @@
-/* Reset margins/padding for all elements */
+/* ================================
+   ✅ Reset & Base Styles
+=================================== */
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +10,9 @@
 body {
   font-family: Arial, sans-serif;
   color: #fff;
-  margin: 0;
-  padding: 0;
   background-color: #202123;
   height: 100vh;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
 .app-container {
@@ -21,7 +21,9 @@ body {
   width: 100%;
 }
 
-/* Left Sidebar */
+/* ================================
+   ✅ Layout: Sidebar & Panels
+=================================== */
 .left {
   display: flex;
   flex-direction: column;
@@ -33,7 +35,6 @@ body {
   color: white;
 }
 
-/* Right Content Panel */
 .right {
   display: flex;
   flex-direction: column;
@@ -48,7 +49,6 @@ body {
   height: 100vh;
 }
 
-/* Scrollable Main Container */
 .main-container {
   width: 100%;
   flex: 1;
@@ -58,10 +58,11 @@ body {
   flex-direction: column;
 }
 
-/* Header */
+/* ================================
+   ✅ Header & Navigation
+=================================== */
 .top {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   align-items: center;
   border: 1px solid rgb(31, 31, 31);
@@ -77,11 +78,9 @@ body {
 }
 
 .top p {
-  margin: 0;
   font-size: 14px;
   color: #aaa;
   line-height: 1.4;
-  max-width: 100%;
   word-wrap: break-word;
 }
 
@@ -95,7 +94,6 @@ body {
 .logo svg {
   width: 40px;
   height: 40px;
-  display: block;
 }
 
 .middle {
@@ -114,14 +112,13 @@ body {
 
 .chat, .search, .library {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   align-items: center;
   height: 35px;
   border-radius: 5px;
   padding-left: 5px;
-  transition: background-color 0.3s ease;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .chat:hover, .search:hover, .library:hover {
@@ -134,7 +131,6 @@ body {
   justify-content: space-between;
   padding: 17px 10px 0px 15px;
   border-radius: 8px;
-  color: white;
   margin: 5px 2px 5px 3px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(31, 31, 31);
@@ -156,7 +152,6 @@ body {
 .plan .more, .fuel {
   font-size: 13px;
   color: #aaa;
-  margin-top: 2px;
 }
 
 .bottom:hover {
@@ -167,17 +162,20 @@ body {
   height: 25px;
   width: 20px;
   color: white;
+  transition: transform 0.3s ease;
 }
 
+/* ================================
+   ✅ Profile & Footer
+=================================== */
 .profile {
   border: 1px solid black;
-  margin: 10px 30px 10px 30px;
+  margin: 10px 30px;
   height: 10%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px;
   background-color: rgb(12, 12, 12);
   border-radius: 20px;
 }
@@ -192,26 +190,45 @@ body {
   cursor: pointer;
 }
 
-/* Form Input Bar */
+.chat-footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: -12px;
+  color: #aaa;
+  background-color: #1c1c1c;
+  border-top: 1px solid #2a2a2a;
+}
+
+.chat-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.chat-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   ✅ Input Form
+=================================== */
 .type-message {
   border: 1px solid black;
   border-radius: 20px;
-  margin: 25px auto;         /* Center horizontally */
+  margin: 25px auto;
   background-color: rgb(12, 12, 12);
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0 30px;
   min-height: 100px;
   height: 80px;
-  flex-shrink: 0;
-  width: 90%;               /* ✅ Increase width */
-  max-width: 1000px;        /* ✅ Optional: max width for large screens */
+  width: 90%;
+  max-width: 1000px;
 }
 
 .ask {
-  flex: 1;                  /* ✅ Auto-fill space */
+  flex: 1;
   height: 60px;
   background-color: rgb(12, 12, 12);
   border: none;
@@ -227,96 +244,114 @@ body {
   margin-left: 10px;
 }
 
-
 .button {
   border-radius: 50%;
   cursor: pointer;
-  background: none;
+  background: #323544;
   border: none;
   padding: 0;
+  height: 40px;
+  width: 40px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
-  background-color: #323544;
-  margin-top: 15px;
 }
 
 .button:hover {
   background-color: #4a4d5e;
 }
 
-.arrow {
-  height: 25px;
-  width: 20px;
-  color: white;
+.arrow.loading {
+  animation: spin 1s infinite linear;
 }
 
-/* Output Section */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ================================
+   ✅ Output Section
+=================================== */
 .output-section {
   display: flex;
   gap: 20px;
   margin: 25px;
   flex: 1;
   overflow: hidden;
-  height: calc(100% - 160px); /* Adjust height dynamically if needed */
+  height: calc(100% - 160px);
 }
 
-/* Code Display Area */
+/* ================================
+   ✅ Code Display with Syntax Highlighting
+=================================== */
 .code-display {
   width: 50%;
-  background: black;
-  padding: 10px;
-  color: white;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   max-height: 100%;
   overflow: hidden;
+  background-color: #1e1e1e;
+  padding: 10px;
 }
 
 .tabs {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  background-color: #121212;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  border-radius: 8px 8px 0 0;
 }
 
 .tabs button {
-  padding: 5px 12px;
+  padding: 6px 14px;
   border: none;
-  background: rgb(159, 142, 159);
-  cursor: pointer;
+  background: #2c2c2c;
+  color: #fff;
   border-radius: 4px;
+  cursor: pointer;
   font-size: 14px;
+  transition: background 0.3s ease;
 }
 
 .tabs button:hover {
-  background: #ccc;
+  background: #444;
 }
 
-.code-display pre {
-  background: #101010;
-  padding: 12px;
-  border-radius: 4px;
+.tabs button:focus {
+  outline: none;
+  background: #555;
+}
+
+.tabs button.active {
+  background-color: #4a4d5e;
+  color: #00d8ff;
+}
+
+.highlighted-code {
   flex: 1;
   overflow: auto;
-  white-space: pre;
-  max-height: 100%;
+  border-radius: 0 0 8px 8px;
 }
 
-/* Preview Area */
+/* ================================
+   ✅ Preview Area
+=================================== */
 .preview-pane {
   width: 50%;
   height: 100%;
-  max-height: 100%;
   border: 1px solid black;
   border-radius: 6px;
   background-color: #000000;
   overflow: auto;
 }
 
-/* General */
+/* ================================
+   ✅ General UI
+=================================== */
 textarea {
   width: 100%;
   height: 100px;
@@ -340,44 +375,3 @@ button {
 .bottom-input {
   padding: 20px;
 }
-.chat-footer {
-  text-align: center;
-  font-size: 14px;
-  padding: 5px 5px 5px 5px;
-  margin-bottom: -12px;
-  color: #aaa;
-  background-color: #1c1c1c;
-  border-top: 1px solid #2a2a2a;
-}
-
-.chat-footer a {
-  color: #ddd;
-  text-decoration: none;
-}
-
-.chat-footer a:hover {
-  text-decoration: underline;
-}
-/* Spin animation for the arrow */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.arrow {
-  height: 25px;
-  width: 20px;
-  color: white;
-  transition: transform 0.3s ease;
-}
-
-/* Apply spin when loading is true */
-.arrow.loading {
-  animation: spin 1s infinite linear;
-}
-
-
