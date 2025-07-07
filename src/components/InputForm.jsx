@@ -16,13 +16,21 @@ export default function InputForm({ onGenerate }) {
 
     setLoading(true);
 
-    const prompt = `You are a code generator.
+    const prompt = `You are a professional website code generator.
 
-Given a short command like:
-"Create calculator", "Create blog", or "Create coding platform, Create tic tac toe game
-,Create portfolio, create contact page/form , Create e-commerce site with cart,
-Create a login/signup page, Create a resume website  , Create countdown timer,
-Create to-do list",
+Your task is to take a simple command like:
+- "Create calculator"
+- "Create blog"
+- "Create coding platform"
+- "Create tic tac toe game(include clickable cells, turn-based play, and win/draw detection) "
+- "Create portfolio"
+- "Create contact form (after click submit shows form submitted)"
+- "Create e-commerce site with cart"
+- "Create login/signup page(after click submit a toast come ( form submiited )"
+- "Create resume website"
+- "Create countdown timer(timer set by user not you and countdown start after user click
+    start countdown, it has years,month,days,hours,minutes,seconds)"
+- "Create to-do list",
 
 Always generate a complete working website using:
 - HTML for layout
