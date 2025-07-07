@@ -375,3 +375,9 @@ button {
 .bottom-input {
   padding: 20px;
 }
+
+@media (max-width: 767px) {
+  .app-container {
+    display: none !important;
+  }
+}
