@@ -59,7 +59,7 @@ Command: "${input}"`;
     } catch (err) {
       console.error("Error parsing Gemini output:", err);
       alert(
-        "⚠️ Failed to generate website. Try a clearer request like 'Create calculator'."
+        "⚠️ Failed to generate website. Try a clearer request."
       );
     } finally {
       setLoading(false);
