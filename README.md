@@ -2,7 +2,7 @@
 
 An AI-powered web application that generates complete website code (HTML, CSS, and JavaScript) from simple user prompts. Built with **React.js** and integrates the **Gemini API** by Google for intelligent code generation.
 
-Live Demo : [https://web-crafter-gen-ai-three.vercel.app/]
+Live Demo : [https://web-crafter-genai.onrender.com/]
 
 ---
 
